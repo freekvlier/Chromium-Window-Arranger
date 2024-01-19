@@ -22,13 +22,31 @@ git clone https://github.com/freekvlier/chromium-window-arranger.git
 cd chromium-window-arranger
 ```
 
-#### 3. Install Required Python Packages:
+#### 3. Create a Virtual Environment (Optional but recommended):
+```bash
+python -m venv env
+```
+#### 4. Activate the Virtual Environment
+
+Activate the virtual environment to isolate your package dependencies.
+
+- Windows:
+```bash
+.\env\Scripts\activate
+```
+
+- Mac/Linux:
+```bash
+source env/bin/activate
+```
+
+#### 5. Install Required Python Packages:
 ```bash
 pip install -r requirements.txt
 ```
 This installs the necessary Python packages (requests, beautifulsoup4, selenium, pygetwindow, pyautogui) for the scrip
 
-#### 3. Run the script:
+#### 6. Run the script:
 ```bash
 python main.py
 ```

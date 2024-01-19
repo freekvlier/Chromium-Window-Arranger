@@ -4,15 +4,13 @@ import threading
 import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-import pygetwindow as gw
-import pyautogui
 import math
+import pyautogui
 
 # Adjust the number of proxy addresses to fetch
 NUM_PROXIES_TO_FETCH = 5
 # Adjust the URL to be opened in all browser windows
 TARGET_URL = "http://httpbin.org/ip"
-
 
 driver_instances_lock = threading.Lock()
 
